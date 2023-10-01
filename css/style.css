@@ -1,0 +1,65 @@
+/* common css start */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,span,p{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primeryFont: 'Poppins', sans-serif;
+    --secondryFont: 'PT Sans', sans-serif;
+    --primeryColor: #FC0;
+    --secondryColor: #353535;
+}
+body{
+    font-family: var(--primeryFont);
+}
+
+/* common css end */
+
+/* navbar start here*/
+nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 16px !important;
+}
+#customeNav ul li a{
+    color: var(--secondryColor);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%;
+    padding: 18px 22px 5px;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+}
+#customeNav ul li a::before{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--secondryColor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s;
+}
+#customeNav ul li:hover a::before{
+    width: 100%;
+}
+nav .navbar-toggler{
+    border: none;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* navbar end here*/
